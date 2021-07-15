@@ -1,0 +1,113 @@
+
+.header-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 2rem;
+  padding: 1rem;
+  padding-top: 2rem;
+}
+
+.logo-text {
+    font-size: 2rem;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-bottom: 20px;
+}
+  
+.logo-div {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    width: 175px;
+}  
+
+.links-div {
+    grid-area: 1 / 2 / 2 / 4;
+    display: flex;
+    justify-content: space-around;
+}
+
+.socials-div {
+    grid-area: 1 / 5 / 2 / 6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.social-icon {
+  transition: 0.3s ease;
+  color: white;
+  border-radius: 50px;
+  padding: 8px;
+}
+.social-icon:hover {
+  background-color: #212d45;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+
+.nav-link {
+    font-size: 2rem;
+    line-height: 32px;
+    color:  #fff;
+    transition: 0.4s ease;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.nav-link:hover {
+    color: #3c74bd;
+    cursor: pointer;
+     
+}
+@media screen and (max-width: 640px){
+    .header-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 60px);
+        grid-column-gap: 0.5rem;
+        grid-row-gap: 0.5rem;
+    }
+    .logo-div {
+        grid-area: 1 / 1 / 2 / 3;
+    }
+    .links-div {
+        grid-area: 2 / 2 / 3 / 5;
+    }
+    .socials-div {
+        align-items: center;
+        grid-area: 1 / 4 / 2 / 6;
+    }
+    .nav-link {
+font-size: 1.7rem;
+    }
+}   
+@media screen and (max-width: 1024px){
+  .header-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(2, 60px);
+      grid-column-gap: 0.5rem;
+      grid-row-gap: 0.5rem;
+  }
+  .logo-div {
+      grid-area: 1 / 1 / 2 / 3;
+  }
+  .links-div {
+      grid-area: 2 / 2 / 3 / 5;
+  }
+  .socials-div {
+      align-items: center;
+      grid-area: 1 / 4 / 2 / 6;
+  }
+  .nav-link {
+      font-size: 1.7rem;
+  }
+}   
+
